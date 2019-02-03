@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Naruto</title>
+    <meta charset="UTF-8">
+    <script language="javascript">
+        startdate = new Date();
+        clockStart = startdate.getTime();
+        function initStopwatch() {
+            var thisTime = new Date();
+            return (thisTime.getTime() - clockStart) / 1000;
+        }
+        function getSecs() {
+            var tSecs = Math.round(initStopwatch());
+            var iSecs = tSecs % 60;
+            var iMins = Math.round((tSecs - 30) / 60);
+            var sSecs = "" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+            var sMins = "" + ((iMins > 9) ? iMins : "0" + iMins);
+            document.getElementById("timer-counter").innerHTML = sMins + ":" + sSecs;
+            setTimeout('getSecs()', 1000);
+        }
+    </script>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+    <script>
+        function together() {
+            startTime();
+            getSecs();
+        }
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/naruto.png">
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+<body onload="together()" align="center">
+    <marquee behavior="alternate" direction="left" bgcolor="#fff">
+        Welcome to my page, dear guests!
+    </marquee>
+
+    <div class="header">
+        <div class="mid">
+            <header>
+                <div class="topmenu">
+
+                    <a href="Naruto.html">Main</a>
+                    <a href="https://jut.su/manga/">Manga</a>
+                    <a href="Registration.html">Registration</a>
+                    <a href="Ability settings.html">Ability settings</a>
+                    <a href="Description.html">Description</a>
+                    <a href="Currency.html">Currency</a>
+                    <a href="Flappy bird.html">Yurui tori</a>
+
+
+                </div>
+                <img src="images/naruto_rasp.png" alt="Logotype of site" title="Logotype of site">
+                <div class="afisha">
+                    <img src="images/rasengan.jpg" alt="Rasengan cover" title="Rasengan cover">
+                    <h3>
+                        Know, that the power flows in you.
+                    </h3>
+
+                    <p><a href="https://jut.su/general/" target="_blak">Cognize your power!</a></p>
+
+                    <div id="txt" style="color:red"></div>
+                    <br/>
+                    You have been here:
+                    <i>
+                        <span id='timer-counter'></span>
+
+                    </i>
+                   
+                    minute/seconds.
+
+                    <div class="clear"></div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="mid">
+            <nav>
+                <ul>
+                    <li><a href="https://jut.su/ninja/Naruto_Uzumaki/">Naruto Uzumaki</a></li>
+                    <li><a href="https://jut.su/naruto/season-2/">Shippuden</a></li>
+                    <li><a href="https://jut.su/naruto/">Films</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+   
+    <div class="content">
+        <div class="mid">
+            <div class="fon">
+                <div class="block">
+                    <a href="https://jut.su/summon/">
+                        <div class="anons">
+
+                            <section>
+                                <img src="images/naruto_kurama.jpg" alt="Tailed beast">
+                                <h3>How to develop the power of tailed beast?</h3>
+                                <p>With the help of internal power you can reach the top</p>
+                            </section>
+                        </div>
+                    </a>
+                </div>
+                <div class="block">
+                    <a href="https://jut.su/genjutsu/">
+                        <div class="anons">
+                            <section>
+                                <img src="images/sharingan1.png" alt="Type of Sharingan">
+                                <h3>Types of Sharingan</h3>
+                                <p>The strongest eyes!</p>
+                            </section>
+                        </div>
+                    </a>
+                </div>
+                <div class="clear"></div>
+                <hr class="line">
+                <div class="block">
+                    <a href="https://jut.su/ninja/">
+                        <div class="anons">
+                            <section>
+                                <img src="images/Hero.jpg" alt="Characters">
+                                <h3>All characters in anime Naruto!</h3>
+                                <p>Naruto, Sasuke, Itachi, Jiraiya...</p>
+                            </section>
+                        </div>
+                    </a>
+                </div>
+                <div class="block">
+                    <a href="https://jut.su/by-episodes/">
+                        <div class="anons">
+                            <section>
+                                <img src="images/jutsu.jpg" alt="Jutsu">
+                                <h3>Technique</h3>
+                                <p>Jutsu</p>
+                            </section>
+                        </div>
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="mid"></div>
+    </div>
+    <div align="center">
+        <video width="700" height="500" poster="images/Rinnegan_Sasuke.png" controls src="video/Naruto.mp4"></video>
+
+
+    </div>
+    </article>
+    <style>
+        aside {
+            background: #f0f0f0;
+            padding: 10px;
+            width: 200px;
+            float: right;
+        }
+    </style>
+
+    <br /><br />
+
+    <footer>
+        <span>2019 &copy; Naruto</span> <span>Design and Development: Bekeyeva Aruzhan</span>
+    </footer>
+</body>
+</html>

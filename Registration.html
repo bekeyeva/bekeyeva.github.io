@@ -1,0 +1,165 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naruto</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/naruto.png">
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+
+<body>
+    <marquee behavior="alternate" direction="left" bgcolor="#fff">
+        Welcome to my page, dear guests!
+    </marquee>
+
+    <div class="header">
+        <div class="mid">
+            <header>
+                <div class="topmenu">
+
+                    <a href="Naruto.html">Main</a>
+                    <a href="https://jut.su/manga/">Manga</a>
+                    <a href="Registration.html">Registration</a>
+                    <a href="Ability settings.html">Ability settings</a>
+                    <a href="Description.html">Description</a>
+                    <a href="Currency.html">Currency</a>
+                    <a href="Flappy bird.html">Yurui tori</a>
+
+
+                </div>
+                <img src="images/naruto_rasp.png" alt="Logotype of site" title="Logotype of site">
+                <form action="mailto:bekeyevaaa@gmail.com" method="post" enctype="text/plain">
+                    
+                    <p>
+                        <i>
+                            Please fill this form.
+                            <br />
+                            <b>
+                                Required field are checked like
+                                <em>*</em>
+                            </b>
+                        </i>
+                    </p>
+                    
+
+                    <fieldset>
+                        <legend>General</legend>
+                        <label for="name">Name<em>*</em></label>
+                        <input id="name" name="name" placeholder="give your name" autofocus required />
+                        <br />
+                        <label for="surname">Surname<em>*</em></label>
+                        <input id="surname" name="Surname" placeholder="give your surname" required />
+                        <br />
+
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="Gender" required>
+                            <option value="female">female</option>
+                            <option value="male">male</option>
+                        </select>
+                        <br />
+                        <label for="marital">Marital Status</label>
+                        <select id="marital" name="Marital Status">
+                            <option value="no">Not selected</option>
+                            <option value="not">Not married</option>
+                            <option value="Dated">Dated</option>
+                            <option value="complicated">Too complicated</option>
+                            <option value="active">In active search</option>
+                        </select>
+                        <br />
+                        <label for="Birth">Date of Birth<em>*</em></label>
+                        <input id="Birth" name="Birth" type="date" required />
+                        <br />
+                        <label for="residence">Residence</label>
+                        <input id="residence" name="residence" />
+                        <br />
+
+                        <legend>Languages that you know:</legend>
+                        <label for="Kazakh">
+                            <input id="kazakh" name="kazakh" type="checkbox" />
+                            Kazakh<br />
+                        </label>
+                        <label for=" Russian">
+                            <input id="Russian" name="Russian" type="checkbox" />
+                            Russian<br />
+                        </label>
+                        <label for=" English">
+                            <input id="english" name="english" type="checkbox" />
+                            English<br />
+                        </label>
+                        <label for=" Polish">
+                            <input id="polish" name="polish" type="checkbox" />
+                            Polish<br />
+                        </label>
+                        <br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contacts</legend>
+                        <label for="mail">E-mail<em>*</em></label>
+                        <input id="mail" name="mail" type="email" placeholder="give your e-mail" required />
+                        <br />
+                        <label for=" phone">Phone number</label>
+                        <input id="phone" name="phone" placeholder="(+7)-xxx-xxx-xx-xx" />
+                        <br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Interests</legend>
+                        <br />
+                        <label for="activity">Activity</label>
+                        <input id="activity" name="activity" />
+                        <br />
+                        <label for="Education">Education</label>
+                        <input id="education" name="education" />
+                        <br />
+                        <label for="career">Career</label>
+                        <input id="career" name="career" />
+                        <br />
+                        <label for="Position">Positiion in life</label>
+                        <input id="position" name="position" />
+                        <br />
+                        <legend>Preferences</legend>
+                        <input type="radio" name="income" checked />Family and children<br />
+                        <input type="radio" name="income" />Career and money<br />
+                        <input type="radio" name="income" />Entertainment and recreation<br />
+                        <input type="radio" name="income" />Science and research<br />
+                        <input type="radio" name="income" />Beauty and art<br />
+                        <input type="radio" name="income" />Fame and influence<br />
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Political preference</legend>
+                        <input list="politica" name="politica" />
+                        <br />
+                        <datalist id="politica">
+                            <option value="indifferent">indifferent</option>
+                            <option value="Communist">Communist</option>
+                            <option value="Socialist">Socialist</option>
+                            <option value="Moderate">Moderate</option>
+                            <option value="Liberal">Liberal</option>
+                            <option value="Conservative">Conservative</option>
+                        </datalist>
+                    </fieldset>
+                    <fieldset>
+                        <legend>More Information</legend>
+                        <label for="comment">Give your opinion</label>
+                        <br />
+                        <textarea id="comment" name="comment" oninput="ValidateComment(this)">
+
+                </textarea>
+                        <br />
+                        <label for="file">Send your CV</label>
+                        <input type="file" id="file" name="file" accept="image/png" />
+                    </fieldset>
+                    <p>
+                        <input type="submit" value="Send this Form" />
+                        <input type="reset" value="Clear all Form" />
+                    </p>
+                </form>
+
+                <br /><br />
+                <footer>
+                    <span>2019 &copy; Naruto</span> <span>Design and Development: Bekeyeva Aruzhan</span>
+                </footer>
+</body>
+</html>
